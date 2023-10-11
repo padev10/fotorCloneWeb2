@@ -1,0 +1,314 @@
+@use "global";
+/////////////////////////////COLORS
+//blue: #2c7dfa
+
+/////////////////////////////VARIABLES
+$oneP4: 1.4em;
+$oneP6: 1.6em;
+
+//////////////////////////////EXTENDS
+%container-settings {
+  width: 90%;
+  padding: 0 0 2em 0;
+  margin: auto;
+}
+%middle-div {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+  //   image
+  img {
+    flex: 1;
+    padding: 2em;
+  }
+  // text side
+  .txt-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.2em;
+    // background-color: beige;
+    #p1 {
+      font-size: 1.6em;
+      font-weight: 600;
+    }
+    #p2,
+    i {
+      font-size: 90%;
+    }
+    button {
+      width: 15em;
+      padding: 0.8em 0;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 2em;
+      margin-top: 2%;
+      background-color: #000;
+    }
+  }
+}
+
+/////////////////////////////MIXIN
+@mixin card-behind($ca, $cb) {
+  content: "";
+  width: 24.4em;
+  height: 1em;
+  margin: -3.4em 0 0em -1.5em;
+  border-radius: 0.5em;
+  z-index: -1;
+  background: linear-gradient(to right, $ca, $cb);
+}
+@mixin how-to {
+  margin-bottom: 4em;
+  @extend %container-settings;
+  // header
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #p1 {
+      font-size: 2em;
+      font-weight: 600;
+      padding: 1em 0;
+    }
+  }
+  //   main
+  main {
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+    margin-top: 4em;
+    // cards
+    .card {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1em;
+      padding: 3em 2em;
+      border-radius: 0.5em;
+      width: 25em;
+      border: 1.4px solid rgba(128, 128, 128, 0.571);
+      background-color: white;
+      //   icon
+      i {
+        margin: 1em 0 0.5em 0;
+      }
+      //   paragraph
+      :nth-child(2) {
+        font-weight: 600;
+      }
+    } //   card 1
+    .c1 {
+      //   before
+      &::before {
+        @include card-behind(#3c46fe, #f0f0f100);
+      }
+    }
+    .c2 {
+      //   before
+      &::before {
+        @include card-behind(#fb27ff, #f0f0f100);
+      }
+    }
+    .c3 {
+      //   before
+      &::before {
+        @include card-behind(#27f0fe, #f0f0f100);
+      }
+    }
+  }
+}
+/////////////////////////////BACKGROUNDS
+.container {
+  .center-cont {
+    width: 100%;
+  }
+  // background
+  .content-bg1 {
+    background: url(https://imgv3.fotor.com/images/background/background-picture.jpeg)
+      no-repeat;
+    background-size: 110em;
+  }
+  .content-bg2 {
+    // width: 96%;
+    background: linear-gradient(to right, #b1aff5, #f6f6fe) no-repeat;
+  }
+  .content-bg4 {
+    // width: 96%;
+    background: linear-gradient(to right, #fff7ff, #feb4ff) no-repeat;
+  }
+}
+/////////////////////////////CONTENT
+.container-s1 {
+  @extend %container-settings;
+  // header
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    div {
+      display: flex;
+      align-items: center;
+      padding: 1em 0;
+      column-gap: 2em;
+    }
+    // nav
+    .nav {
+      display: flex;
+      //   paragraphs
+      p {
+        padding: 0 $oneP6;
+        // icons
+        i {
+          margin-left: 0.4em;
+          font-size: 0.8em;
+        }
+      }
+    }
+    // sign
+    .sign {
+      display: flex;
+      column-gap: 0;
+      //   paragraphs
+      p {
+        padding: 0 $oneP6;
+      }
+      //   last child
+      :last-child {
+        background-color: #2c7dfa;
+        padding: 0.6em 1em;
+        color: white;
+        border-radius: 4em;
+      }
+    }
+  }
+  //   main
+  main {
+    .main-div {
+      display: flex;
+      margin-top: 1em;
+      column-gap: 8em;
+
+      // text container
+      .middle-div {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        padding: 4em 0 0 0;
+        row-gap: 2%;
+        font-size: 80%;
+        // paragraph
+        #p1 {
+          font-size: 3.5em;
+          font-weight: 600;
+        }
+        #p2 {
+          font-weight: 600;
+          margin-top: 1em;
+        }
+        button {
+          width: 14em;
+          margin-top: 2em;
+          padding: 1em;
+          font-size: 1.2em;
+          border-radius: 2em;
+          font-weight: 600;
+          border: none;
+          color: #fff;
+          background-color: #2c7dfa;
+        }
+      }
+      // image
+      img {
+        flex: 1;
+      }
+    }
+  }
+  //   footer
+  footer {
+    p {
+      font-weight: 600;
+      margin-bottom: 1em;
+    }
+    .foo-div {
+      display: flex;
+      column-gap: 1em;
+      margin: 0 auto;
+      // items
+      .items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1em;
+        padding: 1.2em 4em;
+        background-color: #e7f0ff;
+        border-radius: 0.4em;
+        // i's and p's
+        i,
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+.container-s2 {
+  display: flex;
+  align-items: center;
+  @extend %container-settings;
+  //   middle division
+  .middle-div {
+    @extend %middle-div;
+  }
+}
+.container-s3 {
+  display: flex;
+  align-items: center;
+  @extend %container-settings;
+  //   middle division
+  .middle-div {
+    flex-direction: row-reverse;
+    @extend %middle-div;
+  }
+}
+.container-s4 {
+  margin-bottom: 4em;
+  @extend %container-settings;
+  //   middle division
+  .middle-div {
+    @extend %middle-div;
+  }
+}
+.how-to1 {
+  @include how-to();
+}
+.how-to2 {
+  @include how-to();
+  //   main
+  main {
+    display: flex;
+    flex-direction: column;
+    // button
+    button {
+      align-self: center;
+      padding: 1em 3.4em;
+      width: 14em;
+      color: #fff;
+      font-size: 1.4em;
+      font-weight: 600;
+      border-radius: 2em;
+      background-color: #000;
+    }
+    // images
+    img {
+        width: 10em;
+        border-radius: 0.4em;
+        box-shadow: 0 0 10px -5px black;
+    }
+  }
+}

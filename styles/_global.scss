@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 0.94rem;
+}
+body {
+  font-family: Poppins, helvetica, arial;
+  //   container
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    margin: auto;
+    padding-bottom: 20rem;
+    // background-color: aqua;
+  }
+}
