@@ -14,10 +14,9 @@ body .container {
   align-items: center;
   width: 1440px;
   margin: auto;
-  padding-bottom: 20rem;
 }
 
-.how-to2, .how-to1, .container-s4, .container-s3, .container-s2, .container-s1 {
+.ht2, .ht1, .container-s4, .container-s3, .container-s2, .container-s1 {
   width: 90%;
   padding: 0 0 2em 0;
   margin: auto;
@@ -164,7 +163,7 @@ body .container {
   align-items: center;
   -moz-column-gap: 1em;
        column-gap: 1em;
-  padding: 1.2em 4em;
+  padding: 1.8em 2.2%;
   background-color: #e7f0ff;
   border-radius: 0.4em;
 }
@@ -189,28 +188,28 @@ body .container {
 .container-s4 {
   margin-bottom: 4em;
 }
-.how-to1 {
+.ht1 {
   margin-bottom: 4em;
 }
-.how-to1 header {
+.ht1 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.how-to1 header #p1 {
+.ht1 header #p1 {
   font-size: 2em;
   font-weight: 600;
   padding: 1em 0;
 }
-.how-to1 main {
+.ht1 main {
   display: flex;
   justify-content: center;
   -moz-column-gap: 1em;
        column-gap: 1em;
   margin-top: 4em;
 }
-.how-to1 main .card {
+.ht1 main .card {
   display: flex;
   flex-direction: column;
   row-gap: 1em;
@@ -220,13 +219,13 @@ body .container {
   border: 1.4px solid rgba(128, 128, 128, 0.571);
   background-color: white;
 }
-.how-to1 main .card i {
+.ht1 main .card i {
   margin: 1em 0 0.5em 0;
 }
-.how-to1 main .card :nth-child(2) {
+.ht1 main .card :nth-child(2) {
   font-weight: 600;
 }
-.how-to1 main .c1::before {
+.ht1 main .c1::before {
   content: "";
   width: 24.4em;
   height: 1em;
@@ -235,7 +234,7 @@ body .container {
   z-index: -1;
   background: linear-gradient(to right, #3c46fe, rgba(240, 240, 241, 0));
 }
-.how-to1 main .c2::before {
+.ht1 main .c2::before {
   content: "";
   width: 24.4em;
   height: 1em;
@@ -244,7 +243,7 @@ body .container {
   z-index: -1;
   background: linear-gradient(to right, #fb27ff, rgba(240, 240, 241, 0));
 }
-.how-to1 main .c3::before {
+.ht1 main .c3::before {
   content: "";
   width: 24.4em;
   height: 1em;
@@ -254,28 +253,28 @@ body .container {
   background: linear-gradient(to right, #27f0fe, rgba(240, 240, 241, 0));
 }
 
-.how-to2 {
+.ht2 {
   margin-bottom: 4em;
 }
-.how-to2 header {
+.ht2 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.how-to2 header #p1 {
+.ht2 header #p1 {
   font-size: 2em;
   font-weight: 600;
   padding: 1em 0;
 }
-.how-to2 main {
+.ht2 main {
   display: flex;
   justify-content: center;
   -moz-column-gap: 1em;
        column-gap: 1em;
   margin-top: 4em;
 }
-.how-to2 main .card {
+.ht2 main .card {
   display: flex;
   flex-direction: column;
   row-gap: 1em;
@@ -285,13 +284,13 @@ body .container {
   border: 1.4px solid rgba(128, 128, 128, 0.571);
   background-color: white;
 }
-.how-to2 main .card i {
+.ht2 main .card i {
   margin: 1em 0 0.5em 0;
 }
-.how-to2 main .card :nth-child(2) {
+.ht2 main .card :nth-child(2) {
   font-weight: 600;
 }
-.how-to2 main .c1::before {
+.ht2 main .c1::before {
   content: "";
   width: 24.4em;
   height: 1em;
@@ -300,7 +299,7 @@ body .container {
   z-index: -1;
   background: linear-gradient(to right, #3c46fe, rgba(240, 240, 241, 0));
 }
-.how-to2 main .c2::before {
+.ht2 main .c2::before {
   content: "";
   width: 24.4em;
   height: 1em;
@@ -309,7 +308,7 @@ body .container {
   z-index: -1;
   background: linear-gradient(to right, #fb27ff, rgba(240, 240, 241, 0));
 }
-.how-to2 main .c3::before {
+.ht2 main .c3::before {
   content: "";
   width: 24.4em;
   height: 1em;
@@ -318,12 +317,15 @@ body .container {
   z-index: -1;
   background: linear-gradient(to right, #27f0fe, rgba(240, 240, 241, 0));
 }
-.how-to2 main {
+.ht2 main {
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  margin: 3em auto auto auto;
+  width: 90%;
 }
-.how-to2 main button {
-  align-self: center;
+.ht2 main button {
+  margin: auto;
   padding: 1em 3.4em;
   width: 14em;
   color: #fff;
@@ -332,8 +334,187 @@ body .container {
   border-radius: 2em;
   background-color: #000;
 }
-.how-to2 main img {
-  width: 10em;
+.ht2 main .l-cards {
+  display: flex;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+}
+.ht2 main .l-cards .l-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.6em;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  margin: 3.6em auto auto auto;
+  position: relative;
+  cursor: pointer;
+}
+.ht2 main .l-cards .l-card div {
+  position: absolute;
+  bottom: 0;
+  width: 12.94em;
+  padding: 1em 1.2em;
+  border-radius: 0 0 0.4em 0.4em;
+  -webkit-backdrop-filter: blur(8px) saturate(160%);
+          backdrop-filter: blur(8px) saturate(160%);
+  background-color: rgba(65, 65, 65, 0.4);
+  z-index: 1;
+}
+.ht2 main .l-cards .l-card div p {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 0 10px rgba(229, 229, 229, 0.3764705882);
+}
+.ht2 main .l-cards .l-card img {
+  width: 100%;
   border-radius: 0.4em;
   box-shadow: 0 0 10px -5px black;
+}
+
+.ht2 .fq {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.289);
+}
+.ht2 .fq .faqs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 2em 0 1em 0;
+  cursor: pointer;
+}
+.ht2 .fq .faqs .q-M {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+.ht2 .fq .faqs i {
+  cursor: pointer;
+}
+.ht2 .fq .r-M {
+  display: none;
+  width: 94%;
+  margin: 0 auto 1em auto;
+}
+
+.ht3 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ht3 header #p1 {
+  font-size: 2em;
+  font-weight: 600;
+  padding: 1em 0;
+}
+.ht3 main .testimonials {
+  background-image: url(https://rb.gy/wo6c9);
+}
+.ht3 main .testimonials #wdt {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+  height: 40em;
+}
+.ht3 main .testimonials #wdt .bx-1 {
+  display: grid;
+  grid-template-rows: 2fr 0.5fr 0.1fr;
+  height: 30em;
+  width: 27%;
+  padding: 3em 3.4em;
+  font-weight: 500;
+  border-radius: 0.8em;
+  border: 1px solid #d0d2d7;
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+          backdrop-filter: blur(30px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.422);
+}
+.ht3 main .testimonials #wdt .bx-1 .profile {
+  display: flex;
+  padding: 1em 0 1em 0;
+}
+.ht3 main .testimonials #wdt .bx-1 .profile img {
+  width: 4.4em;
+  height: 4.4em;
+  border-radius: 50%;
+}
+.ht3 main .testimonials #wdt .bx-1 .profile div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  width: 50%;
+}
+.ht3 main .testimonials #wdt .bx-1 .profile div p:first-child {
+  font-weight: 600;
+}
+.ht3 main .testimonials #wdt .bx-1 .profile div p:nth-child(2) {
+  padding-top: 0.4em;
+  color: #858585;
+}
+.ht3 main .testimonials #wdt .bx-1 .ratings {
+  font-size: 1em;
+  color: yellow;
+  padding: 1em 0 1em 0;
+}
+.page-footer {
+  background-color: rgba(0, 0, 0, 0.9058823529);
+}
+.page-footer .foo-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "fotor company support platforms" ". products resource .";
+  gap: 6em 1em;
+  padding: 6em;
+  width: 90%;
+  margin: auto;
+}
+.page-footer .foo-content img {
+  width: 10em;
+}
+.page-footer .foo-content .fotor {
+  grid-area: fotor;
+}
+.page-footer .foo-content .company {
+  grid-area: company;
+}
+.page-footer .foo-content .support {
+  grid-area: support;
+}
+.page-footer .foo-content .platforms {
+  grid-area: platforms;
+}
+.page-footer .foo-content .products {
+  grid-area: products;
+}
+.page-footer .foo-content .resource {
+  grid-area: resource;
+}
+.page-footer .foo-content .txt-style h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #fff;
+}
+.page-footer .foo-content .txt-style p,
+.page-footer .foo-content .txt-style ul,
+.page-footer .foo-content .txt-style li a {
+  font-size: 1em;
+  padding-top: 1em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5882352941);
+  font-weight: 500;
+}
+.page-footer .foo-content .txt-style p {
+  color: #fff;
+}
+.page-footer .foo-content .txt-style li {
+  padding: 0.4em 0;
+}
+.page-footer ul {
+  list-style: none;
 }
