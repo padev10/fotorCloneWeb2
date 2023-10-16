@@ -462,6 +462,7 @@ body .container {
   color: yellow;
   padding: 1em 0 1em 0;
 }
+
 .page-footer {
   background-color: rgba(0, 0, 0, 0.9058823529);
 }
@@ -509,11 +510,98 @@ body .container {
   color: rgba(255, 255, 255, 0.5882352941);
   font-weight: 500;
 }
+.page-footer .foo-content .txt-style ul li a {
+  transition: 0.2s ease-out;
+}
+.page-footer .foo-content .txt-style ul li a:hover {
+  color: #0961e4;
+}
 .page-footer .foo-content .txt-style p {
   color: #fff;
 }
 .page-footer .foo-content .txt-style li {
   padding: 0.4em 0;
+}
+.page-footer .foo-content .txt-style .icn {
+  margin-top: 2em;
+}
+.page-footer .foo-content .txt-style .icn i {
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #fff;
+}
+.page-footer .foo-content .txt-style .icn i::before {
+  padding-right: 0.4em;
+}
+.page-footer .foo-content .txt-style .icn i:hover {
+  color: #0961e4;
+}
+.page-footer .foo-content .txt-style .lang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(126, 126, 126, 0.2);
+  width: 60%;
+  margin-top: 2em;
+  border-radius: 0.4em;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.page-footer .foo-content .txt-style .lang p,
+.page-footer .foo-content .txt-style .lang i {
+  padding: 0.6em 0.8em;
+  color: rgba(138, 138, 138, 0.7607843137);
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.page-footer .foo-content .txt-style .lang:hover {
+  background-color: #fff;
+}
+.page-footer .foo-content .txt-style .lang:hover p,
+.page-footer .foo-content .txt-style .lang:hover i {
+  color: rgba(0, 0, 0, 0.6784313725);
+}
+.page-footer .foo-content .txt-style .rel-list {
+  position: relative;
+}
+.page-footer .foo-content .txt-style .rel-list .lang-list {
+  display: none;
+  border-radius: 0.4em;
+  width: 80%;
+  position: absolute;
+  top: -18em;
+  left: 12.2em;
+  padding-bottom: 1em;
+  background-color: white;
+}
+.page-footer .foo-content .txt-style .rel-list .lang-list p {
+  color: rgba(0, 0, 0, 0.6117647059);
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-left: 1em;
+}
+.page-footer .foo-content .txt-style .rel-list .lang-list p:nth-child(1) {
+  margin-top: 0.8em;
+  padding-top: 0;
+}
+.page-footer .foo-content .txt-style .rel-list .lang-list p:nth-child(2) {
+  padding-top: 0;
+  font-size: 1em;
+  font-weight: 600;
+  color: #8d8d8d;
+}
+.page-footer .foo-content .txt-style .rel-list .lang-list .french,
+.page-footer .foo-content .txt-style .rel-list .lang-list .italian,
+.page-footer .foo-content .txt-style .rel-list .lang-list .spanish,
+.page-footer .foo-content .txt-style .rel-list .lang-list .german {
+  cursor: pointer;
+}
+.page-footer .foo-content .txt-style .rel-list .lang-list .french:hover p,
+.page-footer .foo-content .txt-style .rel-list .lang-list .italian:hover p,
+.page-footer .foo-content .txt-style .rel-list .lang-list .spanish:hover p,
+.page-footer .foo-content .txt-style .rel-list .lang-list .german:hover p {
+  color: rgba(61, 32, 252, 0.6666666667);
+  background-color: rgba(0, 0, 0, 0.0901960784);
 }
 .page-footer ul {
   list-style: none;

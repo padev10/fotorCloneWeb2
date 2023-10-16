@@ -454,9 +454,6 @@ $oneP6: 1.6em;
             font-size: 1em;
             color: yellow;
             padding: 1em 0 1em 0;
-            // i's
-            i {
-            }
           }
         }
       }
@@ -521,11 +518,102 @@ $oneP6: 1.6em;
         color: #ffffff96;
         font-weight: 500;
       }
+      ul li a {
+        transition: 0.2s ease-out;
+        // on hover
+        &:hover {
+          color: #0961e4;
+        }
+      }
       p {
         color: #fff;
       }
       li {
         padding: 0.4em 0;
+      }
+      // icons
+      .icn {
+        margin-top: 2em;
+        i {
+          cursor: pointer;
+          transition: all 0.2s;
+          color: #fff;
+          &::before {
+            padding-right: 0.4em;
+          }
+          &:hover {
+            color: #0961e4;
+          }
+        }
+      }
+      // languages
+      .lang {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #7e7e7e33;
+        width: 60%;
+        margin-top: 2em;
+        border-radius: 0.4em;
+        cursor: pointer;
+        transition: all 0.2s;
+        // p's
+        p,
+        i {
+          padding: 0.6em 0.8em;
+          color: #8a8a8ac2;
+          font-weight: 600;
+          font-size: 1.2em;
+        }
+        &:hover {
+          background-color: #fff;
+          p,
+          i {
+            color: #000000ad;
+          }
+        }
+      }
+      .rel-list {
+        position: relative;
+        // list lang
+        .lang-list {
+          display: none;
+          border-radius: 0.4em;
+          width: 80%;
+          position: absolute;
+          top: -18em;
+          left: 12.2em;
+          padding-bottom: 1em;
+          background-color: white;
+          p {
+            color: #0000009c;
+            font-size: 1.2em;
+            font-weight: 600;
+            padding-left: 1em;
+            &:nth-child(1) {
+              margin-top: 0.8em;
+              padding-top: 0;
+            }
+            &:nth-child(2) {
+              padding-top: 0;
+              font-size: 1em;
+              font-weight: 600;
+              color: #8d8d8d;
+            }
+          }
+          .french,
+          .italian,
+          .spanish,
+          .german {
+            cursor: pointer;
+            &:hover {
+              p {
+                color: #3d20fcaa;
+                background-color: #00000017;
+              }
+            }
+          }
+        }
       }
     }
   }
