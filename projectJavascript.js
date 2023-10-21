@@ -6,6 +6,7 @@ for (let i = 1; i <= 7; i++) {
   // using a closure to execute code indivisually
   (function (index) {
     div = document.querySelector(`#f-${index}`);
+    // on click
     div.addEventListener("click", () => {
       // targeting icon & response
       icon = document.querySelector(`#i-${index}`);
